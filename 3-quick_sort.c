@@ -46,6 +46,7 @@ void quick_sort_exec(int *array, int down, int up, size_t size)
 int lomuto_partition(int *array, int down, int up, size_t size)
 {
 	int i = down - 1, m, temp, turn = array[up];
+
 	for (m = down; m <= up - 1; m++)
 	{
 		if (array[m] <= turn)
